@@ -1,0 +1,171 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chill & Charge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    Chill & Charge 🍦🔋
+  </header>
+  <main>
+    <div class="choice" onclick="location.href='chill.html'">
+      <h2>CHILL</h2>
+      <p>Ice cream stands at Maguanyane Square, Pioneer Mall & more! Cool down and vibe out 🍦❄️</p>
+    </div>
+    <div class="choice" onclick="location.href='charge.html'">
+      <h2>CHARGE</h2>
+      <p>Mobile charging stations at high-traffic spots like Queen 2 Hospital ⚡🔌</p>
+    </div>
+  </main>
+  <footer>© 2025 Chill & Charge — Powered by Davy's Vision 💥</footer>
+</body>
+</html>
+
+<!-- chill.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHILL – Order Your Ice Cream</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    🍦 Chill & Charge – CHILL ZONE 🍦
+  </header>
+  <main>
+    <section>
+      <h2>The Baddies (Full Drip Zone)</h2>
+      <ul>
+        <li>💛 Drip Queen Vanilla – smooth, classic, caramel flex</li>
+        <li>😈 Choco Crush – chocolate + cookie crumble chaos</li>
+        <li>💣 Bar-One Bombshell – choc overload w/ Bar-One</li>
+        <li>💗 Pinky Promise – sweet swirl of strawberry/raspberry</li>
+        <li>🍪 Oreo Obsession – cookies ‘n cream dream</li>
+        <li>🌿 Mint to Be – minty fresh, choc drizzle</li>
+      </ul>
+
+      <h2>The Healthy Honeys (Light but Lit)</h2>
+      <ul>
+        <li>☀️ Mango Mood – tropical & tangy</li>
+        <li>🌱 Banana Bae – dairy-free, naturally sweet</li>
+        <li>😏 Strawberry Flirt – fruity, juicy, low-key flirty</li>
+      </ul>
+
+      <h2>Toppings Bar (First one FREE, extras +R4)</h2>
+      <ul>
+        <li>🌈 Rainbow Sprinkles</li>
+        <li>☁️ Mini Mallows</li>
+        <li>🍪 Oreo Crumb</li>
+        <li>🍫 Choc Chips</li>
+        <li>🍿 Caramel Popcorn</li>
+        <li>🥜 Crushed Peanuts</li>
+        <li>🧸 Gummy Bears</li>
+        <li>💧 Choc or Strawberry Drizzle</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Order Your Ice Cream</h2>
+      <form id="iceCreamForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="flavor">Choose your flavor:</label><br>
+        <select id="flavor" name="flavor" required>
+          <option value="drip-queen">Drip Queen Vanilla</option>
+          <option value="choco-crush">Choco Crush</option>
+          <option value="bar-one">Bar-One Bombshell</option>
+          <option value="pinky-promise">Pinky Promise</option>
+          <option value="oreo-obsession">Oreo Obsession</option>
+          <option value="mint-to-be">Mint to Be</option>
+          <option value="mango-mood">Mango Mood</option>
+          <option value="banana-bae">Banana Bae</option>
+          <option value="strawberry-flirt">Strawberry Flirt</option>
+        </select><br><br>
+
+        <label for="topping">Pick your topping:</label><br>
+        <select id="topping" name="topping">
+          <option value="sprinkles">Rainbow Sprinkles</option>
+          <option value="mallows">Mini Mallows</option>
+          <option value="oreo">Oreo Crumb</option>
+          <option value="choc-chips">Choc Chips</option>
+          <option value="popcorn">Caramel Popcorn</option>
+          <option value="peanuts">Crushed Peanuts</option>
+          <option value="gummies">Gummy Bears</option>
+          <option value="drizzle">Choc/Strawberry Drizzle</option>
+        </select><br><br>
+
+        <label for="location">Where you at? (type or enable location):</label><br>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <button type="submit">Submit Order</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p><a href="index.html">⬅ Back to Home</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('iceCreamForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const flavor = document.getElementById('flavor').value;
+      const topping = document.getElementById('topping').value;
+      const location = document.getElementById('location').value;
+
+      console.log('Order received:', { name, flavor, topping, location });
+      alert('Your ice cream order is coming through! 🍦📍');
+
+      // Later: send this to your backend
+    });
+  </script>
+</body>
+</html>
+
+<!-- charge.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHARGE – Find Charging Stations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    🔋 Chill & Charge – POWER ZONE 🔋
+  </header>
+  <main>
+    <section>
+      <h2>Available Charging Spots</h2>
+      <ul>
+        <li>📍 Queen Mamohato Memorial Hospital</li>
+        <li>📍 Queen 2 Hospital</li>
+        <li>📍 Home Affairs – Maseru</li>
+        <li>📍 Lesotho Agricultural Authority (LAA)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Coming Soon...</h2>
+      <p>We're expanding to more high-foot-traffic zones near you! 🔌⚡</p>
+    </section>
+
+    <section>
+      <h2>Need Help?</h2>
+      <p>Call or WhatsApp us: <strong>+266 5000 0000</strong></p>
+    </section>
+  </main>
+  <footer>
+    <p><a href="index.html">⬅ Back to Home</a></p>
+  </footer>
+</body>
+</html>

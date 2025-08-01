@@ -1,0 +1,93 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chill & Charge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    Chill & Charge 🍦🔋
+  </header>
+  <main>
+    <div class="choice" onclick="location.href='chill.html'">
+      <h2>CHILL</h2>
+      <p>Ice cream stands at Maguanyane Square, Pioneer Mall & more! Cool down and vibe out 🍦❄️</p>
+    </div>
+    <div class="choice" onclick="location.href='charge.html'">
+      <h2>CHARGE</h2>
+      <p>Mobile charging stations at high-traffic spots like Queen 2 Hospital ⚡🔌</p>
+    </div>
+  </main>
+  <footer>© 2025 Chill & Charge — Powered by Davy's Vision 💥</footer>
+</body>
+</html>
+
+<!-- style.css -->
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #00c6ff;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+}
+
+.choice {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.choice:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.choice h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.choice p {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 240px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
